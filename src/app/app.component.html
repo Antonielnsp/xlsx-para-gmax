@@ -1,0 +1,13 @@
+<h2>Converter XLSX para GMAX</h2>
+
+<p>
+	Converta o arquivo XLSX gerado em seu painel
+</p>
+
+<input type="file" (change)="onFileChange($event)" />
+
+<div id="output"></div>
+<br>
+<div *ngIf="willDownload">
+	<a id="download"> Baixar arquivo gmax </a>
+</div>
